@@ -13,9 +13,9 @@ public class Main {
         paypalProcessor.process(45.50);
 
         // 3. (Optional) Apple Pay payment
-//        PaymentMethod applePay = new ApplePayPayment();
-//        PaymentProcessor applePayProcessor = new PaymentProcessor(applePay);
-//        applePayProcessor.process(75.25);
+        PaymentMethod applePay = new ApplePayPayment();
+        PaymentProcessor applePayProcessor = new PaymentProcessor(applePay);
+        applePayProcessor.process(75.25);
     }
 }
 
